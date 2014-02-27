@@ -1,0 +1,862 @@
+\documentclass[landscape,a0b,final]{a0poster}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup
+{
+colorlinks=false,
+linkcolor=false,
+urlcolor=black,
+breaklinks=true
+}
+\usepackage{tikz}
+\usepackage{type1cm}
+\usepgflibrary{arrows}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes,snakes}
+\usetikzlibrary[arrows]
+\begin{document}
+\begin{tikzpicture}[rounded corners][>=triangle 60]
+\draw [step=1cm, white, very thin] (0,0) grid (114,84);
+%\draw [step=1cm, gray, very thin] (0,0) grid (114,84);
+%Auflistung der Institute
+\filldraw [fill=white, draw=black, semitransparent] (1,0.5) rectangle (112,4.5);
+\draw (56.5,2.5) node[text width=109cm, text justified]{\tiny 
+\href{http://www.uni-luebeck.de/fakultaeten.php}{Institute der Universität zu
+Lübeck}:\\ \href{http://www.anae.mu-luebeck.de}{Anaesthesiologie} \(|\) 
+\href{http://www.anat.uni-luebeck.de/}{Anatomie} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.470.3&}{Arbeitsmedizin} \(|\)  \href{http://www.uk-sh.de/index.phtml?NavID=676.464.3&}{Augenheilkunde} \(|\) 
+\href{http://www.biochem.uni-luebeck.de/}{Biochemie} \(|\) 
+\href{http://www.bioweb.uni-luebeck.de/}{Biologie} \(|\) 
+\href{http://www.bmo.uni-luebeck.de/}{Biomedizinische Optik} \(|\) 
+\href{http://www.imbs-luebeck.de/}{Biometrie, Medizinische, und Statistik} \(|\) 
+\href{http://www.chemie.uni-luebeck.de}{Chemie} \(|\) 
+\href{http://www.chirurgie.uni-luebeck.de/}{Chirurgie} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.467.3&}{Dermatologie und Venerologie} \(|\) 
+Frauenheilkunde und Geburtshilfe \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.465.3&}{Hals-, Nasen- und Ohrenheilkunde mit Abteilung für Phoniatrie und Pädaudiologie} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=1595.502.3&}{Herzchirurgie} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.451.3&}{Humangenetik} \(|\) 
+\href{http://www.fz-borstel.de/de/research/ibm/index.htm}{Abteilung Immunchemie und Biochemische Mikrobiologie am Forschungszentrum Borstel} \(|\)
+\href{http://www.immunologie.uni-luebeck.de/}{Immunologie und Transfusionsmedizin} \(|\) 
+\href{http://www.ifis.uni-luebeck.de/}{Informationssysteme} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.466.3&}{Kiefer- und Gesichtschirurgie} \(|\) 
+\href{http://www.paedia.uni-luebeck.de/}{Kinder- und Jugendmedizin} \(|\) 
+Kinder- und Jugendpsychiatrie \(|\) 
+\href{http://www.uk-sh.de/?NavID=1595.503.3}{Kinderchirurgie} \(|\) 
+\href{http://www.uk-sh.de/output/La3/676.1467.html}{Klinische Chemie - Zentrallabor} \(|\) 
+\href{http://www.math.uni-luebeck.de/}{Mathematik} \(|\) 
+\href{http://www.imgwf.uni-luebeck.de/_rubric/}{Medizin- und Wissenschaftsgeschichte} \(|\) 
+\href{http://www.medinf.uni-luebeck.de/}{Medizinische Informatik} \(|\) 
+\href{http://www.innere1.uni-luebeck.de/klinik/index.html}{Medizinische Klinik I} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.434.3&}{Medizinische Klinik II} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.435.3&}{Medizinische Klinik III} \(|\) 
+\href{http://www.imt.uni-luebeck.de/}{Medizinische Mess- und Automatisierungstechnik (Medizintechnik)} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.460.3&}{Mikrobiologie, Medizinische, und Hygiene} \(|\) 
+\href{http://www.molmed.uni-luebeck.de/}{Molekulare Medizin} \(|\) 
+\href{http://www.imis.uni-luebeck.de/}{Multimediale und Interaktive Systeme} \(|\) 
+\href{http://www.inb.uni-luebeck.de/}{Neuro- und Bioinformatik} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.443.3&}{Neurochirurgie} \(|\) 
+\href{http://www.kfg.uni-luebeck.de/}{Neuroendokrinologie} \(|\) 
+\href{http://www.neuro.uni-luebeck.de/}{Neurologie} \(|\) 
+Neuroradiologie \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.442.3&}{Orthopädie} \(|\) 
+\href{http://www.patho.uni-luebeck.de/}{Pathologie} \(|\) 
+\href{http://www.pharma.uni-luebeck.de/}{Pharmakologie und Toxikologie} \(|\) 
+\href{http://www.physik.uni-luebeck.de/drupal/}{Physik} \(|\) 
+\href{http://www.physio.uni-luebeck.de/}{Physiologie} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?mNavID=676.685&La=3}{Plastische Chirurgie} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.468.3&}{Psychiatrie und Psychotherapie} \(|\) 
+\href{http://www.medpsy.uni-luebeck.de/}{Medizinische Psychologie} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.2388.3}{Radiologie und Nuklearmedizin} \(|\) 
+\href{http://www.rmed.uni-luebeck.de/}{Rechtsmedizin} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=677.249.3&}{Rheumatologie} \(|\) 
+\href{http://www.rob.uni-luebeck.de/}{Robotik und Kognitive Systeme} \(|\) 
+\href{http://www.isip.uni-luebeck.de/}{Signalverarbeitung und Prozessrechentechnik} \(|\) 
+\href{http://www.isp.uni-luebeck.de/}{Softwaretechnik und Programmiersprachen} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.471.3&}{Sozialmedizin} \(|\) 
+\href{http://www.strahlentherapie-lübeck.de/}{Strahlentherapie} \(|\) 
+\href{http://www.iti.uni-luebeck.de}{Technische Informatik} \(|\) 
+\href{http://www.itm.uni-luebeck.de/}{Telematik} \(|\) 
+\href{http://www.tcs.uni-luebeck.de/}{Theoretische Informatik} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.441.3&}{Unfallchirurgie} \(|\) 
+\href{http://www.uk-sh.de/index.phtml?NavID=676.2390.3}{Urologie} \(|\) 
+\href{http://www.vuz.uni-luebeck.de/}{Virologie und Zellbiologie}
+};
+%Mitglieder Kasten
+\filldraw [fill=white, draw=black, semitransparent] (1,5) rectangle (85.5,12);
+\draw (6.5,5.5) node[text width=10cm, text justified] {Mitglieder der Universität};
+%Medizinische Fakultät
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (2,6.5) rectangle (19,11.5);
+\draw (7.5,7) node[text width=10cm, text justified] {\small Sektion Medizin};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (2.5,7.5) rectangle (7.5,11);
+\draw (5,10.5) node[text width=4.5cm] {\small Professoren};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (8,7.5) rectangle (13,11);
+\draw (10.5,9.5) node[text width=4.5cm, text justified] {\small Wiss. Mitarbeiter \& Assistenten};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (13.5,7.5) rectangle (18.5,11);
+\draw (16,10) node[text width=4.5cm, text justified] {\small Weitere \\ Angestellte};
+%Mitarbeiter
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (20,6.5) rectangle (25,11.5);
+\draw (22.5,9.5) node[text width=4.5cm, text justified] {\small Universitäts\\mitarbeiter außerhalb der Fakultät};
+%TNF
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (26,6.5) rectangle (42.5,11.5);
+\draw (34,7) node[text width=15cm, text justified] {\small Sektion MINT};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (26.5,7.5) rectangle (31.5,11);
+\draw (29,10.5) node[text width=4.5cm, text justified] {\small Professoren};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (32,7.5) rectangle (37,11);
+\draw (34.5,9.5) node[text width=4.5cm, text justified] {\small Wiss. Mitarbeiter \& Assistenten};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (37.5,7.5) rectangle (42,11);
+\draw (40,10) node[text width=4.5cm, text justified] {\small Weitere \\ Angestellte};
+%Studenten
+\filldraw [fill=white, draw=black, semitransparent] (43,5.5) rectangle (84.5,11.5);
+\draw (48.5,6) node[text width=10cm, text justified] {Studenten};
+%Graduiertenschule
+\filldraw [fill=green!40!white, draw=green!50!black, semitransparent] (43.5,7.5) rectangle (49.5,11);
+\draw (46.25,10) node[text width=5cm, text justified] {\small Doktoranten (GS)};
+%TNF Studenten
+%Fachschaft CS
+\filldraw [fill=cyan!05!white, draw=cyan!50!black, semitransparent] (50.3,7.3)
+rectangle (76.2,11.2);
+%CLS
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (50.5,7.5) rectangle (56.5,11);
+\draw (53.25,10.5) node[text width=5cm, text justified] {\small CLS Studenten};
+%Informatik
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (57,7.5) rectangle (63,11);
+\draw (59.75,10) node[text width=5cm, text justified] {\small Informatik\\Studenten};
+%MIW
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (63.5,7.5) rectangle (69.5,11);
+\draw (66.25,10.5) node[text width=5cm, text justified] {\small MIW Studenten};
+%Fachschaft MLS
+%MLS
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (70,7.5) rectangle (76,11);
+\draw (73.25,10.5) node[text width=5cm, text justified] {\small MLS Studenten};
+%Studenten MF
+%Medizin
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (77.5,7.5) rectangle (83.5,11);
+\draw (80.25,10) node[text width=5cm, text justified] {\small Medizin\\Studenten};
+%%ENDE MITGLIEDER
+%Fachschaft Medizin
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (72.5,15) rectangle (82.5,25);
+\draw (76,16) node[text width=6cm, text justified]
+{Fachschaftsvertretung\\Medizin}; \filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (73,17) rectangle (77.5,20);
+\draw (75.25,19) node[text width=4cm, text justified] {\small Gewählte\\Mitglieder};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (77,19.5) circle (0.4);
+\draw (77.3,19.5) node[text width=1cm, text justified] {\tiny 10};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (77.5,17) rectangle (82,20);
+\draw (79.75,19) node[text width=4cm, text justified] {\small Freie\\Mitglieder};
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (72.75,20.75) rectangle (82.25,24.75);
+\draw (76,21.5) node[text width=6cm, text justified] {Vorsitz};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (73,23) rectangle (77,24.5);
+\draw (77.75,24) node[text width=9cm, text justified] {\small Vorsitzender};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (77.5,23) rectangle (82,24.5);
+\draw (82.25,24) node[text width=9cm, text justified] {\small Vize Vors.};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (77.5,21) rectangle (82,22.5);
+\draw (82.23,22) node[text width=9cm, text justified] {\small Kassenwart};
+\draw [->] (75.25,20) .. controls (75, 20.5) and (75.5, 20.5)..(75.25,20.75);
+%Wähler Med
+\draw [->] (80.5,11) .. controls (80.5, 13) and (76, 12) ..(77.5,15);
+%Fachschaften der TNF
+%\filldraw [fill=cyan!05!white, draw=cyan!50!black, semitransparent]
+%(50.8,14.8) rectangle (71.7,25.2);
+%Fachschaft CS
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (51,15) rectangle (61,25);
+\draw (55,16) node[text width=7cm, text justified]
+{Fachschaftsvertretung \\ MINT}; \filldraw [fill=blue!40!white,
+draw=blue!50!black, semitransparent] (51.5,17) rectangle (56,20); \draw (53.75,19) node[text width=4cm, text justified] {\small Gewählte\\Mitglieder};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (55.7,19.7) circle (0.2);
+\draw (56.1,19.7) node[text width=1cm, text justified] {\tiny 17};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (56,17) rectangle (60.5,20);
+\draw (58.25,19) node[text width=4cm, text justified] {\small Freie\\Mitglieder};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (51.5,22.5) rectangle (60.5,24.5);
+\draw (56.25,24) node[text width=9cm, text justified] {\small Sprecher};
+\draw [->] (54.25,20) .. controls (54, 21) and (54.5, 21)..(54.25,22.5);
+%Wähler CS
+\draw [->] (54,11.2) .. controls (54, 13) and (57, 12) ..(56,15);
+%StuPa
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (62.5,43) rectangle (82.5,56);
+\draw (70.25,43.5) node[text width=15cm, text justified] {Studierenden Parlament (StuPa)};
+%Mitglieder
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (63,44.5) rectangle (82,47);
+\draw (70.75,45) node[text width=15cm, text justified] {Gewählte Mitglieder};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (81.5,46.5) circle (0.4);
+\draw (81.8,46.5) node[text width=1cm, text justified] {\tiny 23};
+%Präsidium
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (63.5,50) rectangle (81.5,55);
+\draw (69,50.5) node[text width=10cm, text justified] {Präsidium};
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (64.5,53) rectangle (72.25,54.5);
+\draw (67,53.5) node[text width=5cm, text justified] {\small Präsident};
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (72.75,53) rectangle (80.5,54.5);
+\draw (75.25,53.5) node[text width=5cm, text justified] {\small Vize-Präsident};
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (64,51) rectangle (69.75,52.5);
+\draw (66.75,51.5) node[text width=5cm, text justified] {\small Gremienkoord.};
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (70.25,51) rectangle (75.25,52.5);
+\draw (73,51.5) node[text width=5cm, text justified] {\small Schriftführer};
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (75.75,51) rectangle (81,52.5);
+\draw (78.5,51.5) node[text width=5cm, text justified] {\small Wahlkoord.};
+%Präsidiumswahl
+\draw [->] (72.5,47) .. controls (72, 48) and (73, 49) ..(72.5,50);
+%StuPaWahl
+\draw [->] (82.75,11.5) .. controls (86, 16) and (85, 42) ..(80.5,43);
+%Ausschusswahlen
+%wahl in das Studentenwerk duch das StuPa
+\draw [->, very thick] (71.25,56) to (71.25,58);
+%AStA Wahl
+\draw [->, very thick] (75,43) to (75,40);
+%Asta Rekrutierung
+\draw [->, very thick, dotted] (82,11.5) .. controls (83, 16) and (85, 20) ..(81,30);
+%AStAs
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (62.5,30) rectangle (82.5,40);
+\draw (70.25,30.5) node[text width=15cm, text justified] {Allgemeiner Studierendenausschuss (AStA)};
+%Gewählte Mitglieder
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (63,31.5) rectangle (78.5,39.5);
+\draw (67.25,32) node[text width=8cm, text justified] {\small Gewählte Mitglieder};
+%Vorstand
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (63.5,36.5) rectangle (75,39);
+\draw (66.5,37) node[text width=5cm, text justified] {\small Vorstand};
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (64,37.5) rectangle (69.5,38.5);
+\draw (66.5,38) node[text width=5cm, text justified] {\small Vorsitzender};
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (70,37.5) rectangle (74.5,38.5);
+\draw (72.5,38) node[text width=5cm, text justified] {\small Vize-Vorsitz};
+%Die Referate
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (63.5,32.5) rectangle (66,36);
+\draw (65,33.75) node[text width=3cm, text justified] {\small Ref.\\KOPR};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (66.5,32.5) rectangle (69,36);
+\draw (68,33.75) node[text width=3cm, text justified] {\small Ref.\\KUS};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (69.5,32.5) rectangle (72,36);
+\draw (71,33.75) node[text width=3cm, text justified] {\small Ref.\\EDV};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (72.5,32.5) rectangle (75,36);
+\draw (74,33.75) node[text width=3cm, text justified] {\small Ref.\\PAS};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (75.5,32.5) rectangle (78,39);
+\draw (77,33.75) node[text width=3cm, text justified] {\small Ref.\\Finanz};
+%Sekreteriat
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (79,30.5) rectangle (82,32);
+\draw (80.75,30.75) node[text width=3cm, text justified] {\tiny Sekreteriat};
+%Freie Mitarbeiter
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (79,34.5) rectangle (82,39);
+\draw (80.75,35.5) node[text width=3cm, text justified] {\tiny Freie\\Mitarbeiter};
+%Wahl der Freien Mitarbeiter
+\draw [->, very thick] (78.5,33) to (81,33) to (81,34.5);
+%Konvent der Medizinischen Fakultät
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (3,15) rectangle (13,25);
+\draw (7.75,15.5) node[text width=9cm, text justified] {Senatsausschuss Med.};
+%Dekanate
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (3.5,23.5) rectangle (12.5,24.5);
+\draw (5.5,24) node[text width=4cm, text justified] {Dekan};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (3.5,21.5) rectangle (7.5,22.5);
+\draw (5.5,22) node[text width=4cm, text justified] {Prodekan};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (8.5,21.5) rectangle (12.5,22.5);
+\draw (10.5,22) node[text width=4cm, text justified] {Prodekan};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (3.5,19.5) rectangle (12.5,20.5);
+\draw (5.5,20) node[text width=4cm, text justified] {Studiendekan};
+\filldraw [fill=red!40!white, draw=red!50!black, semitransparent] (3.5,16.5) rectangle (12.5,18.5);
+\draw (5.5,17.5) node[text width=4cm, text justified] {Gewählte Mitglieder};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (12.2,18.2) circle (0.2);
+\draw (12.6,18.2) node[text width=1cm, text justified] {\tiny 4};
+%Ausschusse des Medizinischen Konvents
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (15,24) rectangle (25,25);
+\draw (19.75,24.5) node[text width=9cm, text justified] {Promotionsausschuss};
+\draw [->, very thick] (13,24.5) to (15,24.5);
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (15,22.5) rectangle (25,23.5);
+\draw (19.75,23) node[text width=9cm, text justified] {Forschungskommission};
+\draw [->, very thick] (13,23) to (15,23);
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (15,21) rectangle (25,22);
+\draw (19.75,21.5) node[text width=9cm, text justified] {Strukturkommission};
+\draw [->, very thick] (13,21.5) to (15,21.5);
+%\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (15,22) rectangle (25,23);
+%\draw (19.75,22.5) node[text width=9cm, text justified] {Auschuss 2};
+%\draw [->, very thick] (13,22.5) to (15,22.5);
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (15,18) rectangle (25,20);
+\draw (19.75,18.5) node[text width=9cm, text justified] {Gleichstellungskomission};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (24.7,19.7) circle (0.2);
+\draw (25.1,19.7) node[text width=1cm, text justified] {\tiny 2};
+\draw [->, very thick] (13,19) to (15,19);
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (15,15) rectangle (24,17);
+\draw (19.75,15.5) node[text width=9cm, text justified] {Habilitationsuasschuss};
+\draw [->, very thick] (13,16) to (15,16);
+\draw [->, very thick] (26,16) to (24,16);
+%Wahl des Medizinischen Konvents
+\draw [->] (8,11.5) .. controls (9, 13) and (7, 14) ..(8,15);
+\draw [->] (78,11) .. controls (80, 17) and (6, 12) ..(8,15);
+%Konvent TNF
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (26,15) rectangle (36,25);
+\draw (30.75,15.5) node[text width=9cm, text justified] {Senatsausschuss MINT};
+%Dekanate
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (26.5,23.5) rectangle (35.5,24.5);
+\draw (28.5,24) node[text width=4cm, text justified] {Dekan};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (26.5,21.5) rectangle (30.5,22.5);
+\draw (28.5,22) node[text width=4cm, text justified] {Prodekan};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (31.5,21.5) rectangle (35.5,22.5);
+\draw (33.5,22) node[text width=4cm, text justified] {Prodekan};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (26.5,19.5) rectangle (35.5,20.5);
+\draw (28.5,20) node[text width=4cm, text justified] {Studiendekan};
+\filldraw [fill=blue!40!white, draw=blue!50!black, semitransparent] (26.5,16.5) rectangle (35.5,18.5);
+\draw (28.5,17.5) node[text width=4cm, text justified] {Gewählte Mitglieder};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (35.2,18.2) circle (0.2);
+\draw (35.6,18.2) node[text width=1cm, text justified] {\tiny 4};
+%ausschusse des Konvents der TNF
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (38,24) rectangle (48,25);
+\draw (42.75,24.5) node[text width=9cm, text justified] {Promotionsauschuss};
+\draw [->, very thick] (36,24.5) to (38,24.5);
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (38,22.5) rectangle (48,23.5);
+\draw (42.75,23) node[text width=9cm, text justified] {Prüfungsuaschuss CLS};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (47.7,23.2) circle (0.2);
+\draw (48.1,23.2) node[text width=1cm, text justified] {\tiny 2};
+\draw [->, very thick] (36,23) to (38,23);
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (38,21) rectangle (48,22);
+\draw (42.75,21.5) node[text width=9cm, text justified] {Prüfungsauschuss MLS};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (47.7,21.7) circle (0.2);
+\draw (48.1,21.7) node[text width=1cm, text justified] {\tiny 2};
+\draw [->, very thick] (36,21.5) to (38,21.5);
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (38,19.5) rectangle (48,20.5);
+\draw (42.75,20) node[text width=9cm, text justified] {Prüfungsauschuss MIW};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (47.7,20.2) circle (0.2);
+\draw (48.1,20.2) node[text width=1cm, text justified] {\tiny 2};
+\draw [->, very thick] (36,20) to (38,20);
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (38,18) rectangle (48,19);
+\draw (42.75,18.5) node[text width=9cm, text justified] {Prüfungsauschüsse Info.};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (47.7,18.7) circle (0.2);
+\draw (48.1,18.7) node[text width=1cm, text justified] {\tiny 6};
+\draw [->, very thick] (36,18.5) to (38,18.5);
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (38,16.5) rectangle (48,17.5);
+\draw (42.75,17) node[text width=9cm, text justified] {Studienausschuss};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (47.7,17.2) circle (0.2);
+\draw (48.1,17.2) node[text width=1cm, text justified] {\tiny 2};
+\draw [->, very thick] (36,17) to (38,17);
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (38,15) rectangle (48,16);
+\draw (42.75,15.5) node[text width=9cm, text justified] {Prüfungsaus. Grad. MLS};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (47.7,15.7) circle (0.2);
+\draw (48.1,15.7) node[text width=1cm, text justified] {\tiny 2};
+\draw [->, very thick] (36,15.5) to (38,15.5);
+%Gleichstellungskommision der TNF
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (26,27) rectangle (36,29);
+\draw (30.75,27.5) node[text width=9cm, text justified] {Gleichstellungskomission};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (35.7,27.7) circle (0.2);
+\draw (36.1,27.7) node[text width=1cm, text justified] {\tiny 1};
+\draw [->, very thick] (31,25) to (31,27);
+%Wahl zum Knovent TNF
+\draw [->] (32,11.5) .. controls (33, 13) and (31, 14) ..(31,15);
+\draw [->] (63.25,11.2) .. controls (63, 14) and (30, 11) ..(31,15);
+%FUUU
+%draw [->] (57,11.25) .. controls (57, 14) and (30, 11) ..(31,15);
+%Senat
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (03,43) rectangle (22.5,56);
+\draw (7.75,43.5) node[text width=9cm, text justified] {Senat};
+%Mitglieder
+\filldraw [fill=yellow!70!white, draw=yellow!30!black, semitransparent] (3.5,44.5) rectangle (22,46.5);
+\draw (11,45) node[text width=15cm, text justified] {Mitglieder};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (21.7,46.2) circle (0.2);
+\draw (22.1,46.2) node[text width=1cm, text justified] {\tiny 2};
+%Senat nach Universitätsrat
+\draw [->, very thick, dashed] (22.5,55) .. controls (28,56) and (40,55) ..(45,58);
+%Ausschüsse des Senats
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (4,27) rectangle (20,29);
+\draw (9.75,27.5) node[text width=11cm, text justified] {\small Zentraler Gleichstellungsausschuss};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (4,29.5) rectangle (20,31.5);
+\draw (8.75,30.5) node[text width=9cm, text justified] {\small Haushalts und Planungsausschuss};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (4,32) rectangle (20,34);
+\draw (8.75,32.5) node[text width=9cm, text justified] {\small Zenraler Studienausschuss};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (4,34.5) rectangle (20,36.5);
+\draw (8.75,35.5) node[text width=9cm, text justified] {\small Zentraler Ausschuss für Forschung und Wissenstransfer};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (4,37) rectangle (20,39);
+\draw (8.75,38) node[text width=9cm, text justified] {\small Zentraler Haushalts- und Planungsausschuss};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (4,39.5) rectangle (20,41.5);
+\draw (11.75,40.5) node[text width=15cm, text justified] {\small Ständige
+Komission für die Sicherung der guten \\ wissenschaftlichen Praxis}; \draw
+(8.75,38) node[text width=9cm, text justified] {\small Zentraler Haushalts- und Planungsausschuss}; \filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (5,57) rectangle (20,59);
+\draw (10.5,58) node[text width=10cm, text justified] {\small Koordinierungsausschuss Forschungszentrum Borstel};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (5,59.5) rectangle (20,61.5);
+\draw (10.5,60.5) node[text width=10cm, text justified] {\small Koordinierungsausschuss Zentrale Hochschulbib.};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (5,62) rectangle (20,64);
+\draw (10.5,63) node[text width=10cm, text justified] {\small Koordinierungsausschuss Studiengang Medizintechnik an der FHL};
+%Wahl des Senats
+\draw [->] (02,12) .. controls (01,14) and (01,40) ..(04,43);
+\draw[-, very thick] (22,43) to (22,26);
+\draw[-, very thick] (28,26) to (8,26);
+\draw[->, very thick] (28,26) to (28,25);
+\draw[->, very thick] (8,26) to (8,25);
+\draw[->, very thick] (22,28) to (20,28);
+\draw[->, very thick] (22,30.5) to (20,30.5);
+\draw[->, very thick] (22,33) to (20,33);
+\draw[->, very thick] (22,35.5) to (20,35.5);
+\draw[->, very thick] (22,38) to (20,38);
+\draw[->, very thick] (22,40.5) to (20,40.5);
+\draw[-, very thick] (22,56) to (22,63);
+\draw[->, very thick] (22,58) to (20,58);
+\draw[->, very thick] (22,60.5) to (20,60.5);
+\draw[->, very thick] (22,63) to (20,63);
+%bild inner mitte
+\draw (84.5,42) node[text width=109cm, text justified]
+{
+%\begin{figure}[htb]
+%\centering
+\includegraphics[scale=2.6]{nurlogo.jpg}
+%\end{figure}
+};
+%Präsidium
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (03,66) rectangle (22.5,73);
+\draw (7.75,66.5) node[text width=9cm, text justified] {Präsidium};
+%wahl des Präsidiums
+\draw [->, very thick] (04,56) to (04,66);
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (04,70) rectangle (12,72);
+\draw (8.75,70.5) node[text width=9cm, text justified] {Kanzler};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (13.5,70) rectangle (21.5,72);
+\draw (18.75,70.5) node[text width=9cm, text justified] {Präsident};
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (13.5,67) rectangle (21.5,69);
+\draw (18.75,67.5) node[text width=9cm, text justified] {Vize Präsident};
+%Universitätsrat
+\filldraw [fill=magenta!20!white, draw=magenta!70!black, semitransparent] (43,58) rectangle (62.5,65);
+\draw (49.75,58.75) node[text width=13cm, text justified] {Universitätsrat Schleswig Holstein};
+\filldraw [fill=magenta!40!white, draw=magenta!50!black, semitransparent] (43.5,60) rectangle (62,62);
+\draw (48.25,60.5) node[text width=9cm, text justified] {Mitglieder};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (61.7,61.7) circle (0.2);
+\draw (62.1,61.7) node[text width=1cm, text justified] {\tiny 1};
+%Medizin-Ausschuss
+\filldraw [fill=magenta!20!white, draw=magenta!70!black, semitransparent] (33,58) rectangle (42.5,65);
+\draw (38,58.75) node[text width=9cm, text justified] {Medizin-Ausschuss};
+\filldraw [fill=magenta!40!white, draw=magenta!50!black, semitransparent] (33.5,60) rectangle (42,62);
+\draw (38.25,60.5) node[text width=9cm, text justified] {Mitglieder};
+%Studentenwerk
+\filldraw [fill=magenta!20!white, draw=magenta!70!black, semitransparent] (63,58) rectangle (82.5,65);
+\draw (70.75,58.75) node[text width=15cm, text justified] {Studentenwerk Schleswig Holstein};
+\filldraw [fill=magenta!40!white, draw=magenta!50!black, semitransparent] (63.5,60) rectangle (82,62);
+\draw (68.25,60.5) node[text width=9cm, text justified] {Verwaltungsrat};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (81.7,61.7) circle (0.2);
+\draw (82.1,61.7) node[text width=1cm, text justified] {\tiny 2};
+\filldraw [fill=magenta!40!white, draw=magenta!50!black, semitransparent] (63.5,63.5) rectangle (72.5,64.5);
+\draw (68.25,64) node[text width=9cm, text justified] {Vorstand};
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (72.2,64.2) circle (0.2);
+\draw (72.6,64.2) node[text width=1cm, text justified] {\tiny 1};
+\draw [->] (69,62) .. controls (68, 62.5) and (70, 62.6) ..(69,63.5);
+\filldraw [fill=magenta!40!white, draw=magenta!50!black, semitransparent] (73,63.5) rectangle (82,64.5);
+\draw (77.75,64) node[text width=9cm, text justified] {Geschäftsführer};
+%Zusätzliche Einrichtungen
+%Schülerakademie
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (3,78) rectangle (12.5,81);
+\draw (7.75,78.5) node[text width=9cm, text justified] {Schülerakademie};
+%IT-Service Center
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (3,74) rectangle (12.5,77);
+\draw (7.75,74.5) node[text width=9cm, text justified] {IT-Service Center};
+%Graduate School
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (13,78) rectangle (22.5,81);
+\draw (17.75,78.5) node[text width=9cm, text justified] {Graduate School};
+%Fernuni
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (13,74) rectangle (22.5,77);
+\draw (17.75,75) node[text width=9cm, text justified] {Zentrum für Fernstudium und Weiterbildung};
+%Alumni
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (23,78) rectangle (32.5,81);
+\draw (27.75,78.5) node[text width=9cm, text justified] {Alumni};
+%Mensa
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (23,74) rectangle (32.5,77);
+\draw (27.75,74.5) node[text width=9cm, text justified] {Career Center};
+%Zentrale Hochschulbibliotek
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (23,70) rectangle (32.5,73);
+\draw (27.75,71) node[text width=9cm, text justified] {Zentrale Hochschulbibliothek};
+%Hochschulsport
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (23,66) rectangle (32.5,69);
+\draw (27.75,66.5) node[text width=9cm, text justified] {Hochschulsport};
+%Gemeinsame Tierhaltung
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (23,62) rectangle (32.5,65);
+\draw (27.75,62.5) node[text width=9cm, text justified] {Gemeinsame Tierhaltung};
+%Careeer Center
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (23,58) rectangle (32.5,61);
+\draw (27.75,58.5) node[text width=9cm, text justified] {Mensa};
+%Universitätsklinikum
+\filldraw [fill=gray!10!white, draw=gray!50!black, semitransparent] (33,70) rectangle (62.5,81);
+\draw (41,70.75) node[text width=15cm, text justified] {Universitätsklinikum Schleswig Holstein};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (33.5,78.5) rectangle (42.5,80);
+\draw (39.25,79) node[text width=11cm, text justified] {Aufsichtsrat};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (33.5,76.5) rectangle (42.5,78);
+\draw (39.25,77) node[text width=11cm, text justified] {Vorstand};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (33.5,74) rectangle (42.5,75.5);
+\draw (39.25,74.5) node[text width=11cm, text justified] {Personalräte};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (33.5,71.5) rectangle (42.5,73.5);
+\draw (39.25,72) node[text width=11cm, text justified] {Mitarbeiter};
+\filldraw [fill=gray!10!white, draw=gray!50!black, semitransparent] (43,71.5) rectangle (62,80);
+\draw (48.25,72) node[text width=10cm, text justified] {Tochtergesellschaften};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (43.5,77.5) rectangle (61.5,79.5);
+\draw (52,78) node[text width=16cm, text justified] {Bildungszentrum für Gesundheitsfachberufe};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (43.5,75) rectangle (61.5,77);
+\draw (52,75.5) node[text width=16cm, text justified] {Medizinisches Versorgungszentrum};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (43.5,72.5) rectangle (61.5,74.5);
+\draw (52,73) node[text width=16cm, text justified] {Zentrum für Integrative Psychiatrie};
+%Landesregierung
+\filldraw [fill=gray!10!white, draw=gray!50!black, semitransparent] (63,66) rectangle (82.5,83.5);
+\draw (68,66.75) node[text width=9cm, text justified] {Landesregierung SH};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (63.5,68) rectangle (75.5,70);
+\draw (69.5,69) node[text width=11cm, text justified] {Ministerium für Wissenschaft, Wirtschaft und Verkehr};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (63.5,70.5) rectangle (75.5,72.5);
+\draw (69.5,71.25) node[text width=11cm, text justified] {Finanzministerium};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (63.5,73) rectangle (75.5,75);
+\draw (69.5,73.75) node[text width=11cm, text justified] {Innenministerium};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (63.5,75.5) rectangle (75.5,77.5);
+\draw (69.5,76.5) node[text width=11cm, text justified] {Ministerium für Bildung und Frauen};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (63.5,78) rectangle (75.5,80);
+\draw (69.5,79) node[text width=11cm, text justified] {Ministerium für Justiz, Arbeit und Europa};
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (63.5,80.5) rectangle (82,82.5);
+\draw (72.5,81.5) node[text width=17cm, text justified] {Ministerium für Soziales, Gesundheit, Familie, Jugend und Senioren };
+\filldraw [fill=gray!40!white, draw=gray!50!black, semitransparent] (76,68) rectangle (82,80);
+\draw (78.25,69.5) node[text width=4cm, text justified] {Minister-präsident};
+\draw [->, very thick] (63.5,69) to (60,65);
+%%SIDEBAR
+\filldraw [fill=white, draw=black, semitransparent] (86,81.5) rectangle (112,83.5);
+\draw (99.5,82.5) node[text width=24.5cm, text justified] {\tiny Angefertigt von Lukas Ruge Stand 07.2009. Als Quelle dienen UniVis, Ordnungen und Gesetze sowie Informationen aus den Gremien. No rights reserved what so ever.};
+%Relevantes aus den Ordungen
+\filldraw [fill=white, draw=black, semitransparent] (86,33) rectangle (112,81);
+\draw (98.5,57.9) node[text width=25.7cm, text justified] {
+\tiny \begin{itemize}
+\item  \textbf{\href{http://www.unirat-sh.uni-kiel.de/}{Universitätsrat}:} ist
+ein gemeinsamer Hochschulrat der Universitäten Lübeck, Kiel und Flensburg. Er
+besteht aus 9 Stimmberechtigten Mittgliedern. Im Universitätsrat sitzt
+beratend auch einer (oder mehrere) studentische Vertreter der Uni Lübeck
+(Üblicherweise der AStA Vorsitzende). Der Universitätsrat ist gleichzeitig der
+Hochschulrat der Universitäteten und ist in seinen Aufgaben durch § 19 des HSG
+sowie durch seine eigene Geschäftsordnung bestimmt.
+\begin{itemize}
+\item \textbf{\href{http://www.medizin-ausschuss.uni-kiel.de/}{Medizin-Ausschuss}:} 
+Die Universitäten Kiel und Lübeck betreiben einen gemeinsamen
+Medizinausschuss, dieser koordiniert das Leerangebot, entscheided über
+Profesurauschreibungen, regelt die Finanzen und ist dem Universitätsrat über
+selbige Verteilung jährlich einen Bericht schuldig. Er setzt sich zusammen aus
+einem Wissenschaftsdirektor als Vorsitzendem, sowie Presidiumsvertretern der
+Universitäten in Kiel und Lübeck, sowie de Vorstandsvorsitzenden des UKSH.
+\end{itemize}
+\item
+\textbf{\href{http://www.uni-kiel.de/stwsh/seiten_allgemein/sitemap.html}{Studentenwerk
+Schleswig Holstein}:} Ein Dienstleistungsunternehmen mit wirtschaftlicher,
+sozialer und kultureller Zielsetzung eingerichtet nach dem Studentenwerkgesetz
+von 1971. Es untersteht der Rechtsaufsicht des Ministeriums für Bildung,
+Wissenschaft, Forschung und Kultur des Landes Schleswig-Holstein. Das
+Studentenwerk betreibt unter anderem die Mensen und viele Wohnheime in
+Schleswig Holstein. Zudem stellt es u.a. Bafög Beratung und psychische
+Studienberatung zur Verfügung. Es finanziert sich u.a. durch die
+Semestergebüren der Studenten. Das Magazin \textit{POTTKIEKER} wird vom
+Studentewerk heraufsgebracht.
+\begin{itemize}
+\item \textbf{Der Verwaltungsrat:} Der Verwaltungsrat entscheidet in
+gesetzlich bestimmten Angelegenheiten und wählt den Vorsitzenden und zwei
+Studierende in den Vorstand. In den Verwaltungsrat entsendet jede Hochschule
+je angefangener 3.000 der ihr angehörender Studierender zwei Vertreter/innen.
+\item \textbf{Vorstand:} Der Vorstand leitet die Verwaltung des
+Studentenwerks. Der Vorstand setzt sich zusammen aus dem
+Vorstandsvorsitzenden, dem Geschäftsführer, einem studentischen Mitglied für
+die wissenschaftlichen Hochschulen und einem studentischen Mitglied für die
+Fachhochschulen und die Musikhochschule Lübeck.
+\item \textbf{Geschäftführer:} Der Geschäftsführer vertritt das Studentenwerk
+gerichtlich und rechtsgeschäftlich nach außen.
+\end{itemize}
+\item \textbf{\href{http://univis.uni-luebeck.de/prg?search=departments&name=praesidium&show=single}{Präsidium}:} (ehemals Rektorrat) Das Präsidium der Universität zu Lübeck besteht aus dem Präsidenten, dem Vizepräsidenten und dem Kanzler. Es wird nach der XXX Ordnung auf xxx weise gebildet / gewählt / bestätigt.
+\item \textbf{Senat:} Der Senat besteht aus 13 Personen (7 Professoren, 2
+Studenten, 2 Wis. Mitarbeitern, 2 n. Wiss Mitarb.) Seine
+Entscheidungskompetenz liegt in der Wahl des Präsidiums, dem Treffen des
+Haushaltsplanes der Herausgabe von Stellungnahmen, der Einrichtung von
+Studienplätzen und dem Beschluss von Ordnungen. Der Senat vertritt nach außen
+die gesamte Universität. Er setzt zudem die Senatsausschüsse der Sektionen ein.
+\begin{itemize}
+\item \textbf{Zentraler Gleichberechtigungsausschuss:} Stellt die
+Gleichberechtigung an der Universität sicher.
+\item \textbf{Haushalts und Planungsauschuss:} Unter Vorsitz des Kanzlers wird
+hier der Haushalt der Universität erarbeitet und dem Senat vorgelegt.
+\item \textbf{Senatsausschuss MINT:} Der Senatsauschuss seitzt sich aus dem
+Dekan, 11 Professoren, 4 wissenschaftlichen Mitarbeitern, 2 Studenten (mit je
+einem Vertreter) und 2 Mitarbeitern des nichtwissenschaftlichen Dienstes
+zusammen. Es erarbeitet die Studiengänge an der Sektion und kümmert sich um
+deren fachliche Belange. Gewählt wird der Ausschuss durch die Mitglieder der
+Sektion MINT, allerdings besetzt duch den Senat, welcher die Wahl dabei
+respektieren soll.
+\begin{itemize}
+\item \textbf{Prüfungsauschüsse:} Die Prüfungsausschüsse der Sektion erarbeiten
+unter anderem die Prüfungsordnung für das jeweilige Studienfach.
+\item \textbf{Gleichstellungskomision:} Zuständig für Überwachung der
+Gleichstellung an der Universität
+\item \textbf{Strukturkomision}
+\end{itemize}
+\item \textbf{Senatsausschuss Medizin:} Zusammensetzung und Aufgaben wie bei dem
+Sektion MINT.
+\begin{itemize}
+\item \textbf{Promotionsauschuss}
+\item \textbf{Forschungskommission}
+\item \textbf{Strukturkommission} \\ (Die Strukturkomission der Sektion MINT ist
+aus Platzgründen nicht abgebildet.)
+\end{itemize}
+\end{itemize}
+\item \textbf{Gemeinsamer Habilitationsausschuss der Sektionen:} Berät über
+Habilitationen.
+\item \textbf{Das Studierendenparlament:} ist neben dem AStA eines der
+zentralen Organe der Studierendenschaft. Es wird jährlich gewählt und dient
+der zentralen Meinungs- und Willensbildung. Es Wählt die Mitglieder des AStA
+und führt die Finanzielle Aufsicht über das Budget der Studierendenschaft. Es
+beschließt und erlässt zudem die Ordnungen der Studierendenschaft und richtet
+Fachschaften ein. Zudem hat das StuPa laut Vollvbersammlungsordung (VVO § 1)
+die Möglichkeit Vollversammlungen einzuberufen. Das StuPa hat die Kompetenz
+Ausschüsse zu bilden. Das StuPa tagt Monatlich in Vorlesungszeit.
+\item \textbf{\href{http://www.asta.uni-luebeck.de/}{Allegeine
+Studierendenauschuss}:} Der AStA führt die laufenden geschäfte der
+Studierendenschaft und vertritt sie nach außen. Er hällt sich dabei an die
+Maßgabe des StuPa. Der AStA tagt regelmäßig in der Vorlesungszeit. Der AStA
+veröffentlicht das \textit{StudentenPack}.
+\begin{itemize}
+\item \textbf{Vorstand:} Der Vorsitzende des AStA ist Leiter des AStA und der
+Vertreter der Studierendenschaft. Er wird durch das StuPa direkt gewählt. Der
+Vorsitzende hat immer einen stellvertretenden Vorsitzenden.
+\item \textbf{Referat Finanzen:} Als einziges Referat ist das Finanzreferat
+zwangsläufig zu besetzen. Der Referatsleiter ist Vertreter des
+Vize-Vorsitzenden.
+\item \textbf{Die Referatsstruktur:} Der AStA teilt sich in Referate auf, die
+jeweils eine Referatsleitung haben. Die Referate kümmern sich vorrangig um
+bestimmte Bereiche der Belange der Studenten
+\end{itemize}
+\item \textbf{\href{http://medizin.fachschaften.uni-luebeck.de/}{Fachschaft
+Medizin}:} Die Fachschaft Medizin vertritt die fachlichen Belange der
+Medizin-Studenten der Universität zu Lübeck. Sie wird ein mal pro Jahr gewählt.
+\item \textbf{\href{http://cs.fachschaften.uni-luebeck.de}{Fachschaft MINT}:}
+Die Fachschaft MINT vertritt die fachlichen Belange der
+Studenten der Sektion MINT in den Studienfächer MIW, MML, MLS Medizinische
+Informatik und Informatik der Universität zu Lübeck. Sie wird ein mal pro Jahr
+gewählt.
+\item \textbf{Mitglieder der Universität}: Studenten, Angestellte, Dozenten,
+Wissenschaftliche- und nichtwissenschaftliche Mitarbeiter sowie die Mitglieder
+des Präsidiums sind Mitglieder der Universität.
+\end{itemize}
+\begin{itemize}
+\item \textit{\href{http://www.itsc.uni-luebeck.de/}{IT-Service Center}}
+Stellt Dienstleistungen für den Betrieb rechnergestützten
+Informationsverarbeitung und Kommunikation für Forschung, Lehre, Studium und
+Verwaltung der Universität. Das enthällt u.a. das Uni-LAN, die Rechner und die
+Emails. Geleitet wird es von einer IT-Kommission, die keine studentischen
+Mitglieder hat und nichtöffentlich tagt.
+\item \textit{\href{http://www.gradschool.uni-luebeck.de/}{Graduate School for
+Computing in Medicine and Life Sciences}} Ziel ist eine interdisziplinäre
+Ausbildung von Doktoranden an den Schnittstellen Informatik und Medizin,
+Informatik und Lebenswissenschaften sowie Lebenswissenschaften und Medizin.
+Die Graduiertenschule wird von einem akademischen Leiter und einem
+Geschäftsführer geführt und nach außen repräsentiert. Fragen, die die
+Graduiertenschule als Gesamtheit betreffen, werden durch den Lenkungsausschuss
+entschieden. Dieser setzt sich aus Vertretern der Lehrkräfte der Schule, der
+Studierenden und der Universität zusammen. Die Studierenden werden durch zwei
+Studentische Vertreter der Gradschool vertreten.
+\item \textit{\href{http://www.zhb.uni-luebeck.de/}{Zentrale
+Hochschulbibliothek}}: Die Zentrale Hochschulbibliothek Lübeck dient als
+wissenschaftliche Fachbibliothek der Forschung, Lehre, dem Studium und der
+beruflichen Weiterbildung auf dem Gebiete der Medizin, Naturwissenschaft und
+der Technik und ist in erster Linie für die Literaturversorgung der
+Hochschulangehörigen zuständig. Darüber hinaus steht die ZHB allen Einwohnern
+Schleswig-Holsteins zur Nutzung offen.
+\begin{itemize}
+\item Für die Koordination der Bibliothek gibt es einen Runden Tisch an dem
+Studenten, Mitarbeiter und Dozenten sitzen.
+\end{itemize}
+\item Mensa: Die Mensa der Universität zu Lübeck wird vom
+Studentenwerk-Schleswig Holstein verwaltet.
+\end{itemize}
+};
+%Legende
+\filldraw [fill=white, draw=black, semitransparent] (86,5) rectangle (112,32);
+\draw [->] (86.5,30) .. controls (87, 29) and (87, 31) ..(88,30);
+\draw [->, very thick] (86.5,26.25) to (88,26.25);
+\draw [->, very thick, dotted] (86.5,23) .. controls (87, 22) and (87, 24) ..(88,23);
+\draw [->, very thick, dashed] (86.5,19) .. controls (87, 20) and (87, 18) ..(88,19);
+\filldraw [fill=cyan!40!white, draw=cyan!50!black, semitransparent] (86.5,16) rectangle (88,17);
+\filldraw [fill=orange!40!white, draw=orange!50!black, semitransparent] (86.5,13.9) rectangle (88,14.9);
+\filldraw [fill=yellow!40!white, draw=yellow!50!black, semitransparent] (86.5,11.8) rectangle (88,12.8);
+\filldraw [fill=green!20!white, draw=green!70!black, semitransparent] (86.5,9.7) rectangle (88,10.7);
+\filldraw [fill=magenta!20!white, draw=magenta!70!black, semitransparent] (86.5,7.6) rectangle (88,8.6);
+\filldraw [fill=blue!10!white, draw=white!90!green, semitransparent] (87.25,5.75) circle (0.2);
+\draw (87.65,5.75) node[text width=1cm, text justified] {\tiny 4};
+\draw (100.5,18.5) node[text width=20cm, text justified] {
+\tiny
+\textbf{Wahl nach § 17 HSG}: "`[...] werden die Mitglieder der Organe und sonstigen Gremien von den jeweiligen Mitgliedergruppen in freier, gleicher und geheimer Wahl unmittelbar gewählt."' soll heißen: Studenten wählen die Studentischen Vertreter, Professoren die Professoren usw. \\
+\\
+\textbf{Bestimmt}: Das Gremien wählt oder bestimmt die Mitglieder, allerdings nicht (zwangsläufig) aus seiner Mitte. Die Wahl des Präsidiums der Universität ist gesondert in der Präsidiumswahlordnung bestimmt.\\
+\\
+\textbf{Rekrutiert sich aus}: Sofern die Wählenden nicht auch die Gruppe aller mit passiven Wahrecht sind, ist bei einem Gremium angegeben aus welcher Personengruppe sich die Mitglieder zusammensetzen können \\
+\\
+\textit{Schlägt vor}: Durch dieses Gremum werden Personen Vorgeschlagen, welche dann von anderer Seite Bestimmt werden. \\
+\\ 
+\textbf{Der TNF Zugehörend} \\
+\\
+\textbf{Der Medizinischen Fakultät zugehörend} \\
+\\
+\textbf{Universitäre und Studentische Gremien \& Personengruppen außerhalb der Fakultäten}\\
+\\
+\textbf{Weitere Universitäre Einrichtungen} \\
+\\
+\textbf{Überuniversitäre Gremien und Organisatuonen sowie Landes- und Bundesorganisationen} \\
+\textbf{Anzahl Studentischer Mitglieder}
+};
+\end{tikzpicture}
+\newpage
+Personenverzeichniss: \\
+\begin{tabular}{|p{15cm}||p{15cm}||p{15cm}||p{15cm}||p{15cm}|||p{15cm}||p{15cm}|}
+\hline
+\multicolumn{3}{|c||}{Studentische Gremien} & \multicolumn{2}{||c|}{Konvente} & \multicolumn{2}{||c|}{Universitäre Gremien} \\
+\hline
+\hline
+\textbf{Studierendenparlament} & \textbf{AStA} & \textbf{Fachschaften} & \textbf{Konvent der Med. Fak} &  \textbf{Konvent der TNF} & \textbf{Senat} & \textbf{Präsidium}\\
+\begin{itemize}
+\item Christoph Zabel
+\item Alma Osmanovic
+\item Georg Engelbart
+\item Florian Markowsky
+\item Nils Uflacker
+\item Thiemo Sprink
+\item Johanna Neuhold
+\item Niklas Finck
+\item Katharina Ilm
+\item Frauke Riechert
+\item Florian Hinze
+\item Dennis Boldt
+\item Christoph Leschcyk
+\item Julius Naujoks
+\item Teresa Pliet
+\item Linda Krause
+\item Julien Beck
+\item Anna-Katharina Trull
+\item Thierry Panje
+\item Inga Stolz
+\item Christoph Curths
+\item Hannes Nauhaus
+\item Sven-Thomas Antoni
+\end{itemize}
+&
+\begin{itemize}
+\item Vorsitz
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\item Finanzen
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\item Politik, Ausland, Soziales
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\item Kultur, Umwelt, Sport
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\item Elekronische Datenverarbeitung
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\item Öffentlichkeitsarbeit
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\item Freie Mitarbeiter
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\end{itemize}
+&
+\textbf{Fachschaft Medizin}
+\begin{itemize}
+\item Christoph Zabel (Sprecher)
+\item Alma Osmanovic
+\item Lena Kertelge
+\item Verena Becker
+\item Kim-Eva Linhoff
+\item Bjorn Heuwer
+\item Anna Beilharz
+\item Mirja Muller
+\item Christopth Marquetand
+\item Felicitas Kahlitz
+\end{itemize}
+\textbf{Fachschaft MLS}
+\begin{itemize}
+\item Thiemos Sprink (Sprecher)
+\item Julius Naujoks
+\item Daniel Hasche
+\item Patrick Beckert
+\item Frauke Kausch
+\end{itemize}
+\textbf{fachschaftCS}
+\begin{itemize}
+\item Viola Borchard (Sprecher)
+\item Anne Reichart
+\item Jens Hocke
+\item Anna Barkentien
+\item Christian Klante
+\end{itemize}
+&
+\begin{itemize}
+\item
+\end{itemize}
+&
+\begin{itemize}
+\item 
+\end{itemize}
+&
+\begin{itemize}
+\item Prof. Dr. rer. nat. Walter Dosch
+\item Prof. Dr. rer. nat. Stefan Fischer
+\item Prof. Dr. rer. nat. Enno Hartmann
+\item Prof. Dr. med. Hendrik Lehnert
+\item Prof. Dr.-Ing. Erik Maehle, Erik
+\item Prof. Dr. med. Werner Solbach
+\item Prof. Dr. med. Jürgen Westermann 
+\item apl. Prof. Dr. Stefan Anemüller
+\item Dr. med. Hauke Nielsen 
+\item \textit{Michael Drefahl}
+\item \textit{Philipp Wewering}
+\item \textit{Sebastian Wien} 
+\item	Rena Giese
+\item Dipl.-Ing. Axel Schiller
+\end{itemize}
+&
+\begin{itemize}
+\item Prof. Dr. med. Peter Dominiak, (Präsident)
+\item Prof. Dr. rer. nat. Thomas Martinetz (VP) 
+\item Dr. Oliver Grundei (Kanzler)
+\end{itemize}\\
+\hline
+\hline
+\end{tabular} \\
+Weitere Studentische Vertreter (2008/2009): 
+\begin{itemize}
+	\item Universitäsrat Schleswig Holstein: Philip Wewering
+	\item Auschüsse des Senats
+	\begin{itemize} 
+		\item Zentraler Haushalts- und Planungsausschuss: Martin Demmert und Arnika Wagner
+		\item Zentraler Studienausschuss: ??
+		\item Zentraler Ausschuss für Forschung und Wissenstransfer: Claudia Korn, Miriam Skilandat
+		\item Zentraler Haushalts und Planungsausschuss: ??
+		\item Zentraler Gleichstellungsausschuss: Katharina Moser-Notborn (\textit{ist das ein Senatsuasschuss})
+		\item Kommission zur Förderung des wissenschaftlichen Nachwuchses: Michael Seydel
+		\item Koordinierungsausschuss Forschungszentrum Borstel: 
+	\end{itemize}
+	\item Komisionen uns Auschüsse der TNF
+	\begin{itemize}
+		\item Gleichstellungskommission der TNF: Anja Kerstein
+		\item Strukturkommission TNF: Thiemo Sprink, Julia Kinzel
+		\item Promotionsauschuss der TNF: Phillip Wewering
+		\item Prüfungsauschuss CLS: Anna Barlentien
+		\item Prüfungsauschuss MLS: A. Barkentien und Johannes Lotz
+		\item Prüfungsausschuss Graduiertenschule MLS: J. Naujoks und I. Choschzick
+		\item Prüfungsauschuss MIW: J. Kuczewski  und T. Fritz
+		\item \textbf{Prüfungsauschüsse} Informatik 
+		\begin{itemize}
+			\item Diplom: Jan Kolbaum, Thomas Klähn
+			\item Bachelor: Christian Wolters
+			\item Master: Jan Kolbaum, Thomas Klähn
+		\end{itemize}
+		\item Studienausschuss TNF: Anna Barkentien und Thiemo Sprink
+		\item 
+	\end{itemize}
+	\item Prüfungsauschuss Medizin:
+	\item Verterter im Studentenwerk Schleswig Holstein: Linda Krause
+\end{itemize}
+Inofizielle Posten:
+\begin{itemize}
+\item Kontaktperson für den Stadtverkehr:
+\end{itemize}
+\end{document}
